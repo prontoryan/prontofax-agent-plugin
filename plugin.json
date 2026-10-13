@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "prontofax",
+  "version": "1.0.0",
+  "description": "Send a fax from your agent. Pay $2.99 on delivery, no account.",
+  "author": {
+    "name": "ProntoFax",
+    "email": "support@prontofax.com",
+    "url": "https://www.prontofax.com"
+  },
+  "homepage": "https://www.prontofax.com/mcp/",
+  "repository": "https://github.com/prontoryan/prontofax-agent-plugin",
+  "license": "MIT",
+  "keywords": [
+    "fax",
+    "send fax",
+    "fax number",
+    "government forms",
+    "irs",
+    "social security",
+    "unemployment",
+    "medicaid"
+  ]
+}

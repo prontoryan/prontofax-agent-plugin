@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "prontofax": {
+      "type": "streamable-http",
+      "url": "https://mcp.prontofax.com/mcp",
+      "headers": {
+        "X-PF-Client": "agent-plugin"
+      }
+    }
+  }
+}
