@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased (11-11-2026)
+
+- README: Cursor install by hand in `~/.cursor/mcp.json`, verified against cursor.com/docs/mcp, with a pointer to the one-click button on prontofax.com. Cursor documents no https install link, so the README carries the config block rather than a button. Docs only, no change to the plugin itself.
+
 ## 1.0.0 (10-13-2026)
 
 - First release.

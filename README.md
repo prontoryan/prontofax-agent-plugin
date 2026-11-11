@@ -25,6 +25,20 @@ The MCP server is hosted at `https://mcp.prontofax.com/mcp`. It needs no sign in
 
 ### Cursor
 
+Add the server by hand: put this in `~/.cursor/mcp.json` (create the file if it does not exist), then restart Cursor. The site also has a one-click Add to Cursor button at https://www.prontofax.com/fax-from-cursor/.
+
+```json
+{
+  "mcpServers": {
+    "prontofax": {
+      "url": "https://mcp.prontofax.com/mcp"
+    }
+  }
+}
+```
+
+This adds the MCP server only. The two skills come with the plugin install below.
+
 From the marketplace, once listed: open the Cursor Marketplace, search for ProntoFax and install it.
 
 From this repository, as a local plugin:
