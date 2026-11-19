@@ -2,7 +2,7 @@
 
 Send a fax from your agent. Pay $2.99 on delivery, no account.
 
-This plugin connects Cursor and Grok Bot to [ProntoFax](https://www.prontofax.com), a pay per fax service for US fax numbers. It adds the hosted ProntoFax MCP server and two skills that teach the agent the fax workflow.
+This plugin connects Claude, Cursor and Grok Bot to [ProntoFax](https://www.prontofax.com), a pay per fax service for US fax numbers. It adds the hosted ProntoFax MCP server and two skills that teach the agent the fax workflow.
 
 - **Find a fax number.** The agent looks up the verified fax number for a US government office, such as a Social Security field office, a state unemployment or Medicaid agency, MassHealth, California EDD or FEMA. Each result shows the official source and the date it was last verified. When there is no verified number, the agent says so instead of guessing.
 - **Send a fax.** The agent confirms the destination, asks about a cover page and gives you a link to prontofax.com with the number filled in. You add the pages there, from a photo or a PDF, up to 25 pages including the cover page, and pay $2.99. Your card is held and charged only when delivery is confirmed. Nothing is sent or charged until you finish on that page.
@@ -13,15 +13,20 @@ ProntoFax sends faxes only. It does not receive them.
 
 ```
 plugin.json                        Agent Plugins 1.0.0 manifest
+.claude-plugin/plugin.json         Claude plugin manifest
 mcp.json                           The hosted MCP server
 skills/send-a-fax/SKILL.md         The send workflow
 skills/find-a-fax-number/SKILL.md  Fax number lookups
 assets/icon-512.png                Icon
 ```
 
-The MCP server is hosted at `https://mcp.prontofax.com/mcp`. It needs no sign in and no API key. It has two tools, `lookup_fax_number` and `send_fax`. The plugin sends one fixed header, `X-PF-Client: agent-plugin`, so ProntoFax can count sends that start from this plugin. It carries nothing about you.
+The MCP server is hosted at `https://mcp.prontofax.com/mcp`. It needs no sign in and no API key. It has two tools, `lookup_fax_number` and `send_fax`. The plugin sends one fixed header, `X-PF-Client: agent-plugin` from Cursor and Grok Bot or `X-PF-Client: claude-plugin` from Claude, so ProntoFax can count sends that start from this plugin. It carries nothing about you.
 
 ## Install
+
+### Claude
+
+Install ProntoFax from the Claude plugin directory. The plugin connects Claude to the ProntoFax server at `mcp.prontofax.com` and adds the two skills. Claude can look up a verified agency fax number and start a send. You upload the document and pay on prontofax.com, and nothing is sent or charged until you pay there.
 
 ### Cursor
 
