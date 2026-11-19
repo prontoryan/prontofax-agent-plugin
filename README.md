@@ -17,7 +17,7 @@ plugin.json                        Agent Plugins 1.0.0 manifest
 mcp.json                           The hosted MCP server
 skills/send-a-fax/SKILL.md         The send workflow
 skills/find-a-fax-number/SKILL.md  Fax number lookups
-assets/icon-512.png                Icon
+assets/                            Listing icons
 ```
 
 The MCP server is hosted at `https://mcp.prontofax.com/mcp`. It needs no sign in and no API key. It has two tools, `lookup_fax_number` and `send_fax`. The plugin sends one fixed header, `X-PF-Client: agent-plugin` from Cursor and Grok Bot or `X-PF-Client: claude-plugin` from Claude, so ProntoFax can count sends that start from this plugin. It carries nothing about you.
