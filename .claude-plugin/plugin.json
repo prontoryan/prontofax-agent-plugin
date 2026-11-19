@@ -1,13 +1,17 @@
 {
   "name": "prontofax",
+  "displayName": "ProntoFax",
   "version": "1.0.0",
-  "description": "Send a fax from your agent. Pay $2.99 on delivery, no account.",
+  "description": "Send a fax from Claude. Look up a verified agency fax number, pay $2.99 on delivery, no account.",
   "author": {
     "name": "ProntoFax",
     "email": "support@prontofax.com",
     "url": "https://www.prontofax.com"
   },
-  "homepage": "https://www.prontofax.com/mcp/",
+  "homepage": "https://www.prontofax.com/fax-from-claude/",
+  "documentationUrl": "https://www.prontofax.com/mcp/",
+  "supportUrl": "https://www.prontofax.com/faq/",
+  "termsOfServiceUrl": "https://www.prontofax.com/terms/",
   "repository": "https://github.com/prontoryan/prontofax-agent-plugin",
   "license": "MIT",
   "keywords": [
